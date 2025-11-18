@@ -36,7 +36,7 @@
         <a href="stickers.html" class="nav-link active">Stickers</a>
         <a href="prints.html" class="nav-link">Prints</a>
         <a href="photography.html" class="nav-link">Photography</a>
-        <a href="#" class="nav-link">Artwork</a>
+        <a href="artwork.html" class="nav-link">Artwork</a>
         <a href="#" class="nav-link">About me</a>
     </div>
 
@@ -47,10 +47,15 @@
             <a href="stickers.html" class="nav-link active">Stickers</a>
             <a href="prints.html" class="nav-link">Prints</a>
             <a href="photography.html" class="nav-link">Photography</a>
-            <a href="#" class="nav-link">Artwork</a>
+            <a href="artwork.html" class="nav-link">Artwork</a>
             <a href="#" class="nav-link">About me</a>
         </div>
     </nav>
+
+    <!-- Back Button -->
+    <div class="container" style="margin-top: 1rem; margin-bottom: -2rem;">
+        <a href="stickers.html" class="back-btn">← Back to Stickers</a>
+    </div>
 
     <!-- Main Content -->
     <div class="container">
@@ -125,7 +130,7 @@
                                 <td><strong>Matte</strong></td>
                                 <td class="rating-yellow">Duller</td>
                                 <td class="rating-red">Less</td>
-                                <td class="rating-green">Good</td>
+                                <td class="rating-dark-green">Best</td>
                                 <td class="rating-dark-green">Best</td>
                                 <td>The default material choice.</td>
                             </tr>
@@ -133,8 +138,8 @@
                                 <td><strong>Glossy</strong></td>
                                 <td class="rating-dark-green">Very Vibrant</td>
                                 <td class="rating-dark-green">Most</td>
-                                <td class="rating-dark-green">Best</td>
                                 <td class="rating-green">Good</td>
+                                <td class="rating-yellow">Average</td>
                                 <td>Solid choice to get more vibrancy for stronger colours.</td>
                             </tr>
                             <tr>
@@ -150,7 +155,7 @@
                                 <td class="rating-green">Vibrant (On white)</td>
                                 <td class="rating-green">Good (On white)</td>
                                 <td class="rating-green">Good (On white)</td>
-                                <td class="rating-green">Good</td>
+                                <td class="rating-yellow">Average</td>
                                 <td>Translucent stickers which look great on white, and offers see-through effects on surfaces like glass and acrylic.</td>
                             </tr>
                         </tbody>
@@ -223,8 +228,6 @@
         saturationSlider.addEventListener('input', updateImageFilters);
 
         resetBtn.addEventListener('click', function() {
-            materialSelect.value = 'Matte';
-            materialImage.src = 'images/Materials/Matte.jpg';
             brightnessSlider.value = 0;
             saturationSlider.value = 0;
             updateImageFilters();

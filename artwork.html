@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Print Page - Artwork</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <video class="title-video" autoplay loop muted playsinline>
+            <source src="images/Title.mp4" type="video/mp4">
+        </video>
+        <div class="title-overlay">
+            <h1 class="title-text">Me, Inked</h1>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stickers.html" class="nav-link">Stickers</a>
+        <a href="prints.html" class="nav-link">Prints</a>
+        <a href="photography.html" class="nav-link">Photography</a>
+        <a href="artwork.html" class="nav-link active">Artwork</a>
+        <a href="#" class="nav-link">About me</a>
+    </div>
+
+    <!-- Navigation Bar (Desktop) -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="stickers.html" class="nav-link">Stickers</a>
+            <a href="prints.html" class="nav-link">Prints</a>
+            <a href="photography.html" class="nav-link">Photography</a>
+            <a href="artwork.html" class="nav-link active">Artwork</a>
+            <a href="#" class="nav-link">About me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Introduction -->
+        <section class="fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title" style="font-size: 2rem; text-align: center;">On Screens Or Paper</h2>
+                <p style="text-align: justify;">I'm not much of an artist. I did marker art in 2017-2019 while spending my web life in the My Little Pony fandom, and had a brief digital stint in 2024. It was not the passion I would pursue myself, but I learned to appreciate the passion that goes into making artwork, and enjoy many artists, both those I am friends with, and those I browse for online. Here, you can find the artwork I have commissioned or received.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Characters and Personality -->
+        <section class="artwork-section-2 fade-in" style="margin-top: 3rem;">
+            <!-- Desktop: 40/60 Split -->
+            <div class="characters-split desktop-only">
+                <div class="characters-text-box">
+                    <h2 class="text-box-title" style="font-size: 1.8rem;">Characters and Personality</h2>
+                    <p style="text-align: justify;">I started off with a dragon, Eve, in 2017. My OCs have since grown to several dozen, across many species. However, I still keep my roots dear, and <em>Luna</em> is still my representative fursona, whom I designed as the best version of who I want to become. Including them, here are some of the characters I own and love so dearly, from various eras.</p>
+                </div>
+                <div class="characters-gallery-box">
+                    <div id="charactersGallery" class="characters-scrollable"></div>
+                </div>
+            </div>
+
+            <!-- Mobile: Vertical -->
+            <div class="characters-mobile mobile-only">
+                <div class="full-width-box">
+                    <h2 class="text-box-title" style="font-size: 1.8rem;">Characters and Personality</h2>
+                    <p style="text-align: justify;">I started off with a dragon, Eve, in 2017. My OCs have since grown to several dozen, across many species. However, I still keep my roots dear, and <em>Luna</em> is still my representative fursona, whom I designed as the best version of who I want to become. Including them, here are some of the characters I own and love so dearly, from various eras.</p>
+                    <button id="viewCharactersBtn" class="view-characters-btn">View Character Gallery</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Illustrations -->
+        <section class="fade-in" style="margin-top: 3rem;">
+            <div class="full-width-box">
+                <h2 class="text-box-title" style="font-size: 2rem; text-align: center;">Illustrations</h2>
+                <p style="text-align: center;">With my characters, alongside those of my friends, I have accrued several larger pieces over the years. Each of them with a story to tell.</p>
+            </div>
+        </section>
+
+        <!-- Section 3a: Illustrations Gallery -->
+        <section class="illustrations-section fade-in" style="margin-top: 2rem;">
+            <div id="illustrationsGallery" class="illustrations-gallery"></div>
+            
+            <!-- Pagination Controls -->
+            <div class="pagination-controls" id="illustrationsPagination"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luna's Print Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Characters Modal (Mobile) -->
+    <div id="charactersModal" class="modal characters-modal">
+        <div class="modal-content characters-modal-content">
+            <span class="close-modal" onclick="closeCharactersModal()">&times;</span>
+            <h2>Character Gallery</h2>
+            <div id="charactersModalGallery" class="characters-scrollable"></div>
+        </div>
+    </div>
+
+    <!-- Image Modal (Full Size) -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <script src="artwork-data.js"></script>
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Fade-in on scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Characters Gallery
+        const characterImages = [
+            'images/Artwork/Chars/1585349274041_image0.png',
+            'images/Artwork/Chars/20170322-000.jpg',
+            'images/Artwork/Chars/20170413-001.jpg',
+            'images/Artwork/Chars/20170530-006.jpg',
+            'images/Artwork/Chars/20170606-005.jpg',
+            'images/Artwork/Chars/20170620-000.jpg',
+            'images/Artwork/Chars/20170627-000.jpg',
+            'images/Artwork/Chars/20170808-002.jpg',
+            'images/Artwork/Chars/20170815-000.jpg',
+            'images/Artwork/Chars/20180612-000.jpg',
+            'images/Artwork/Chars/20190129_163133.jpg',
+            'images/Artwork/Chars/fursuit_ref.png',
+            'images/Artwork/Chars/IMG_20191208_105144.jpg',
+            'images/Artwork/Chars/luna 2.png',
+            'images/Artwork/Chars/photo_2025-01-07_10-23-19.jpg',
+            'images/Artwork/Chars/PsychicFireSong (1).png',
+            'images/Artwork/Chars/ref.png',
+            'images/Artwork/Chars/Screenshot_20220901-113510_WhatsApp.jpg'
+        ];
+        
+        function loadCharacters() {
+            const desktopGallery = document.getElementById('charactersGallery');
+            const modalGallery = document.getElementById('charactersModalGallery');
+            
+            characterImages.forEach(img => {
+                const imgElement = document.createElement('img');
+                imgElement.src = img;
+                imgElement.alt = 'Character';
+                imgElement.className = 'character-img';
+                imgElement.onclick = () => openImageModal(img);
+                
+                desktopGallery.appendChild(imgElement.cloneNode(true));
+                modalGallery.appendChild(imgElement.cloneNode(true));
+            });
+        }
+
+        // Characters Modal (Mobile)
+        function closeCharactersModal() {
+            document.getElementById('charactersModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        document.getElementById('viewCharactersBtn').addEventListener('click', () => {
+            document.getElementById('charactersModal').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Illustrations Gallery with Pagination
+        const ILLUSTRATIONS_PER_PAGE = 5;
+        let currentPage = 1;
+
+        function displayIllustrations() {
+            const startIndex = (currentPage - 1) * ILLUSTRATIONS_PER_PAGE;
+            const endIndex = Math.min(startIndex + ILLUSTRATIONS_PER_PAGE, illustrationsData.length);
+            const pageIllustrations = illustrationsData.slice(startIndex, endIndex);
+
+            const gallery = document.getElementById('illustrationsGallery');
+            gallery.innerHTML = '';
+
+            pageIllustrations.forEach(item => {
+                const illDiv = document.createElement('div');
+                illDiv.className = 'illustration-item';
+                
+                illDiv.innerHTML = `
+                    <div class="illustration-image" onclick="openImageModal('${item.image}')">
+                        <img src="${item.image}" alt="${item.title || 'Illustration'}">
+                    </div>
+                    <div class="illustration-story">
+                        <p>${item.story}</p>
+                        <div class="illustration-credits">
+                            <p><strong>Artist(s):</strong> ${item.artists.map(a => 
+                                a.link ? `<a href="${a.link}" target="_blank" rel="noopener noreferrer">${a.name}</a>` : a.name
+                            ).join(', ')}</p>
+                            <p><strong>Year:</strong> ${item.year}</p>
+                        </div>
+                    </div>
+                `;
+                
+                gallery.appendChild(illDiv);
+            });
+
+            updateIllustrationsPagination();
+        }
+
+        function updateIllustrationsPagination() {
+            const totalPages = Math.ceil(illustrationsData.length / ILLUSTRATIONS_PER_PAGE);
+            const pagination = document.getElementById('illustrationsPagination');
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '<div class="pagination-wrapper">';
+            
+            // Previous button
+            html += `<button class="pagination-btn prev-btn" ${currentPage === 1 ? 'disabled' : ''} onclick="changePage(-1)">← Previous</button>`;
+            
+            // Page numbers
+            html += '<div class="page-numbers">';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class="pagination-btn page-btn ${i === currentPage ? 'active' : ''}" onclick="goToPage(${i})">${i}</button>`;
+            }
+            html += '</div>';
+            
+            // Next button
+            html += `<button class="pagination-btn next-btn" ${currentPage === totalPages ? 'disabled' : ''} onclick="changePage(1)">Next →</button>`;
+            
+            html += '</div>';
+            pagination.innerHTML = html;
+        }
+
+        function changePage(direction) {
+            const totalPages = Math.ceil(illustrationsData.length / ILLUSTRATIONS_PER_PAGE);
+            currentPage += direction;
+            if (currentPage < 1) currentPage = 1;
+            if (currentPage > totalPages) currentPage = totalPages;
+            displayIllustrations();
+            document.querySelector('.illustrations-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            displayIllustrations();
+            document.querySelector('.illustrations-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Image Modal
+        function openImageModal(imagePath) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imagePath;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeImageModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeImageModal();
+                closeCharactersModal();
+            }
+        });
+
+        // Prevent modal image from closing when clicked
+        document.getElementById('modalImage').addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Initialize
+        loadCharacters();
+        displayIllustrations();
+    </script>
+</body>
+</html>
