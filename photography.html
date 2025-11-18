@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Print Page - Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <video class="title-video" autoplay loop muted playsinline>
+            <source src="images/Title.mp4" type="video/mp4">
+        </video>
+        <div class="title-overlay">
+            <h1 class="title-text">Each Moment a Memory</h1>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stickers.html" class="nav-link">Stickers</a>
+        <a href="prints.html" class="nav-link">Prints</a>
+        <a href="photography.html" class="nav-link active">Photography</a>
+        <a href="#" class="nav-link">Artwork</a>
+        <a href="#" class="nav-link">About me</a>
+    </div>
+
+    <!-- Navigation Bar (Desktop) -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="stickers.html" class="nav-link">Stickers</a>
+            <a href="prints.html" class="nav-link">Prints</a>
+            <a href="photography.html" class="nav-link active">Photography</a>
+            <a href="#" class="nav-link">Artwork</a>
+            <a href="#" class="nav-link">About me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Introduction -->
+        <section class="fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title">My life with photography</h2>
+                <p>I've been taking pictures since 2014, starting on a humble Instax mini camera which i used to capture memories for keepsake while on vacations. Today, i shoot subjects from birds, to landscapes, to our fluffy friends (in both senses of the word) anywhere i can see them. I aim to capture the decisive moment, and interesting subjects, when I'm out and about, and go for clinical precision when shooting in the studio. You can find my work here.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Photo Gallery -->
+        <section class="gallery-section fade-in" style="margin-top: 3rem;">
+            <div class="gallery-container">
+                <div class="gallery-filters">
+                    <div class="filter-group">
+                        <label for="yearFilter">Year:</label>
+                        <select id="yearFilter" class="filter-select">
+                            <option value="all">All Years</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="categoryFilter">Category:</label>
+                        <select id="categoryFilter" class="filter-select">
+                            <option value="all">All</option>
+                            <option value="furry">Furry</option>
+                            <option value="non-furry">Non-Furry</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="gallery" class="photo-gallery">
+                    <!-- Gallery items will be dynamically loaded here -->
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luna's Print Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <!-- Include gallery configuration -->
+    <script src="gallery-config.js"></script>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Fade-in on scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Gallery data loaded from gallery-config.js
+        const galleryImages = window.galleryImages || [];
+
+        // Extract unique years from images
+        function populateYearFilter() {
+            const years = [...new Set(galleryImages.map(img => {
+                const date = new Date(img.date);
+                return date.getFullYear();
+            }))].sort((a, b) => b - a);
+
+            const yearFilter = document.getElementById('yearFilter');
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearFilter.appendChild(option);
+            });
+        }
+
+        // Filter and display gallery
+        function filterGallery() {
+            const yearFilter = document.getElementById('yearFilter').value;
+            const categoryFilter = document.getElementById('categoryFilter').value;
+            
+            const filtered = galleryImages.filter(img => {
+                const imgYear = new Date(img.date).getFullYear().toString();
+                const yearMatch = yearFilter === 'all' || imgYear === yearFilter;
+                const categoryMatch = categoryFilter === 'all' || img.category === categoryFilter;
+                return yearMatch && categoryMatch;
+            });
+
+            displayGallery(filtered);
+        }
+
+        // Display gallery with masonry-style layout
+        function displayGallery(images) {
+            const gallery = document.getElementById('gallery');
+            gallery.innerHTML = '';
+
+            if (images.length === 0) {
+                gallery.innerHTML = '<p class="no-results">No images found for the selected filters.</p>';
+                return;
+            }
+
+            images.forEach(img => {
+                const item = document.createElement('div');
+                item.className = `gallery-item aspect-${img.aspect}`;
+                item.innerHTML = `
+                    <img src="${img.thumbnail}" alt="Photography" loading="lazy" data-full="${img.path}">
+                `;
+                item.addEventListener('click', () => openImageModal(img.path));
+                gallery.appendChild(item);
+            });
+        }
+
+        // Open image in modal
+        function openImageModal(imagePath) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            
+            modal.style.display = 'flex';
+            modalImg.src = imagePath;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+        // Prevent modal from closing when clicking the image
+        document.getElementById('modalImage').addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Event listeners for filters
+        document.getElementById('yearFilter').addEventListener('change', filterGallery);
+        document.getElementById('categoryFilter').addEventListener('change', filterGallery);
+
+        // Initialize gallery
+        populateYearFilter();
+        filterGallery();
+    </script>
+</body>
+</html>

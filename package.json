@@ -1,0 +1,13 @@
+{
+  "name": "lunaprintpage-gallery-builder",
+  "version": "1.0.0",
+  "description": "Gallery builder for Luna's Print Page",
+  "scripts": {
+    "build-gallery": "node build-gallery.js"
+  },
+  "dependencies": {
+    "exif-parser": "^0.1.12",
+    "sharp": "^0.33.0"
+  },
+  "devDependencies": {}
+}

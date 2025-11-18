@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Print Page - Prints</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <video class="title-video" autoplay loop muted playsinline>
+            <source src="images/Title.mp4" type="video/mp4">
+        </video>
+        <div class="title-overlay">
+            <h1 class="title-text">Cards & Posters</h1>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stickers.html" class="nav-link">Stickers</a>
+        <a href="prints.html" class="nav-link active">Prints</a>
+        <a href="photography.html" class="nav-link">Photography</a>
+        <a href="#" class="nav-link">Artwork</a>
+        <a href="#" class="nav-link">About me</a>
+    </div>
+
+    <!-- Navigation Bar (Desktop) -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="stickers.html" class="nav-link">Stickers</a>
+            <a href="prints.html" class="nav-link active">Prints</a>
+            <a href="photography.html" class="nav-link">Photography</a>
+            <a href="#" class="nav-link">Artwork</a>
+            <a href="#" class="nav-link">About me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Introduction -->
+        <section class="fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title">Art and Pictures For Any Place</h2>
+                <p>I make photo and artwork prints on my Epson L18050, full colour matching for larger batches to get the best results. I use Fujifilm Crystal Archive as my main printing stock, and go for natural colours for photos, while maximizing colour accuracy for artwork prints.</p>
+            </div>
+        </section>
+
+        <!-- Section 2: WIP Notice -->
+        <section class="fade-in" style="margin-top: 3rem;">
+            <div class="full-width-box wip-notice">
+                <p>This section is WIP, as printing materials are currently in low supply outside of 4x6in format. Inquire on Telegram if you are interested in prints while i work on this page.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luna's Print Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Fade-in on scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
