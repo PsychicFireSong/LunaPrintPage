@@ -136,7 +136,7 @@
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
         // Gallery data loaded from gallery-config.js
-        const galleryImages = window.galleryImages || [];
+        // galleryImages is already declared in gallery-config.js
 
         // Extract unique years from images
         function populateYearFilter() {
