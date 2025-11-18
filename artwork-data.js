@@ -15,7 +15,7 @@ const illustrationsData = [
     },
     {
         image: 'images/Artwork/Illustrations/8.png',
-        story: 'A beautiful piece given to me by my friend Ammy. This piece illustrates the character we share, nicknamed Kaei. They are a blend between Amaterasu from Okami, with the whims of the oceans as a Manokit. This piece shows the beauty of the character as the stand beneath blossoming Sakura trees.',
+        story: 'A beautiful piece given to me by my friend Ammy. This piece illustrates the character we share, nicknamed Kaei. They are a blend between Amaterasu from Okami, with the whims of the oceans as a Manokit. This piece shows the beauty of the character as they stand beneath blossoming Sakura trees.',
         artists: [
             { name: 'Qubrie(No Comms)', link: 'https://t.me/Qubrie' }
         ],
