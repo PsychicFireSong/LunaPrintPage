@@ -82,9 +82,15 @@
                     </div>
                 </div>
 
+                <!-- Pagination Controls (Top) -->
+                <div class="pagination-controls" id="paginationTop"></div>
+
                 <div id="gallery" class="photo-gallery">
                     <!-- Gallery items will be dynamically loaded here -->
                 </div>
+
+                <!-- Pagination Controls (Bottom) -->
+                <div class="pagination-controls" id="paginationBottom"></div>
             </div>
         </section>
     </div>
@@ -137,6 +143,34 @@
 
         // Gallery data loaded from gallery-config.js
         // galleryImages is already declared in gallery-config.js
+        
+        // Pagination settings
+        const ITEMS_PER_PAGE = 100;
+        let currentPage = 1;
+        let filteredImages = [];
+        
+        // Lazy loading observer
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    const src = img.dataset.src;
+                    if (src) {
+                        img.src = src;
+                        img.removeAttribute('data-src');
+                        observer.unobserve(img);
+                    }
+                }
+            });
+        }, {
+            rootMargin: '10%' // Load images when they're 10% away from viewport
+        });
+        
+        // Check if gallery images are loaded
+        if (typeof galleryImages === 'undefined' || !galleryImages || galleryImages.length === 0) {
+            console.error('Gallery images not loaded or empty!');
+            document.getElementById('gallery').innerHTML = '<p class="no-results">Error: Gallery images not loaded. Please check gallery-config.js</p>';
+        }
 
         // Extract unique years from images
         function populateYearFilter() {
@@ -159,35 +193,58 @@
             const yearFilter = document.getElementById('yearFilter').value;
             const categoryFilter = document.getElementById('categoryFilter').value;
             
-            const filtered = galleryImages.filter(img => {
+            filteredImages = galleryImages.filter(img => {
                 const imgYear = new Date(img.date).getFullYear().toString();
                 const yearMatch = yearFilter === 'all' || imgYear === yearFilter;
                 const categoryMatch = categoryFilter === 'all' || img.category === categoryFilter;
                 return yearMatch && categoryMatch;
             });
 
-            displayGallery(filtered);
+            currentPage = 1; // Reset to first page on filter change
+            displayGallery();
+            updatePaginationControls();
         }
 
-        // Display gallery with masonry-style layout
-        function displayGallery(images) {
+        // Display gallery with masonry-style layout and pagination
+        function displayGallery() {
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
 
-            if (images.length === 0) {
+            if (filteredImages.length === 0) {
                 gallery.innerHTML = '<p class="no-results">No images found for the selected filters.</p>';
                 return;
             }
 
-            images.forEach(img => {
+            // Calculate pagination
+            const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+            const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, filteredImages.length);
+            const pageImages = filteredImages.slice(startIndex, endIndex);
+
+            pageImages.forEach((img) => {
                 const item = document.createElement('div');
                 item.className = `gallery-item aspect-${img.aspect}`;
-                item.innerHTML = `
-                    <img src="${img.thumbnail}" alt="Photography" loading="lazy" data-full="${img.path}">
-                `;
+                
+                const imgElement = document.createElement('img');
+                imgElement.dataset.src = img.thumbnail; // Use data-src for lazy loading
+                imgElement.alt = 'Photography';
+                imgElement.dataset.full = img.path;
+                imgElement.onerror = function() {
+                    this.onerror = null;
+                    this.src = img.path;
+                };
+                
+                // Observe image for lazy loading
+                imageObserver.observe(imgElement);
+                
+                item.appendChild(imgElement);
                 item.addEventListener('click', () => openImageModal(img.path));
                 gallery.appendChild(item);
             });
+            
+            // Scroll to top of gallery on page change
+            if (currentPage > 1) {
+                document.querySelector('.gallery-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
 
         // Open image in modal
@@ -217,6 +274,103 @@
         document.getElementById('modalImage').addEventListener('click', (e) => {
             e.stopPropagation();
         });
+
+        // Pagination controls
+        function updatePaginationControls() {
+            const totalPages = Math.ceil(filteredImages.length / ITEMS_PER_PAGE);
+            const paginationHTML = createPaginationHTML(totalPages);
+            
+            document.getElementById('paginationTop').innerHTML = paginationHTML;
+            document.getElementById('paginationBottom').innerHTML = paginationHTML;
+            
+            // Add event listeners to all pagination buttons
+            document.querySelectorAll('.page-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentPage = parseInt(btn.dataset.page);
+                    displayGallery();
+                    updatePaginationControls();
+                });
+            });
+            
+            document.querySelectorAll('.prev-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        displayGallery();
+                        updatePaginationControls();
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.next-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        displayGallery();
+                        updatePaginationControls();
+                    }
+                });
+            });
+            
+            document.querySelectorAll('.goto-input').forEach(input => {
+                input.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        const page = parseInt(input.value);
+                        if (page >= 1 && page <= totalPages) {
+                            currentPage = page;
+                            displayGallery();
+                            updatePaginationControls();
+                        } else {
+                            alert(`Please enter a page number between 1 and ${totalPages}`);
+                        }
+                    }
+                });
+            });
+        }
+        
+        function createPaginationHTML(totalPages) {
+            if (totalPages <= 1) return '';
+            
+            let html = '<div class="pagination-wrapper">';
+            
+            // Previous button
+            html += `<button class="pagination-btn prev-btn" ${currentPage === 1 ? 'disabled' : ''}>← Previous</button>`;
+            
+            // Page numbers
+            html += '<div class="page-numbers">';
+            
+            // Always show first page
+            if (currentPage > 3) {
+                html += `<button class="pagination-btn page-btn ${currentPage === 1 ? 'active' : ''}" data-page="1">1</button>`;
+                if (currentPage > 4) html += '<span class="page-ellipsis">...</span>';
+            }
+            
+            // Show pages around current page
+            for (let i = Math.max(1, currentPage - 2); i <= Math.min(totalPages, currentPage + 2); i++) {
+                html += `<button class="pagination-btn page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+            }
+            
+            // Always show last page
+            if (currentPage < totalPages - 2) {
+                if (currentPage < totalPages - 3) html += '<span class="page-ellipsis">...</span>';
+                html += `<button class="pagination-btn page-btn ${currentPage === totalPages ? 'active' : ''}" data-page="${totalPages}">${totalPages}</button>`;
+            }
+            
+            html += '</div>';
+            
+            // Next button
+            html += `<button class="pagination-btn next-btn" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>`;
+            
+            // Go to page input
+            html += '<div class="goto-page">';
+            html += '<label>Go to page:</label>';
+            html += `<input type="number" class="goto-input" min="1" max="${totalPages}" placeholder="#">`;
+            html += `<span class="page-info">of ${totalPages}</span>`;
+            html += '</div>';
+            
+            html += '</div>';
+            return html;
+        }
 
         // Event listeners for filters
         document.getElementById('yearFilter').addEventListener('change', filterGallery);
