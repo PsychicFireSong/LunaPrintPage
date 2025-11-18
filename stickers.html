@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Print Page - Stickers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Resources/styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <video class="title-video" autoplay loop muted playsinline>
+            <source src="images/Title.mp4" type="video/mp4">
+        </video>
+        <div class="title-overlay">
+            <h1 class="title-text desktop-title">Take, Paste, Bring Them Home!</h1>
+            <h1 class="title-text mobile-title" style="display: none;">Free stickers for all</h1>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stickers.html" class="nav-link active">Stickers</a>
+        <a href="#" class="nav-link">Prints</a>
+        <a href="#" class="nav-link">Photography</a>
+        <a href="#" class="nav-link">Artwork</a>
+        <a href="#" class="nav-link">About me</a>
+    </div>
+
+    <!-- Navigation Bar (Desktop) -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="stickers.html" class="nav-link active">Stickers</a>
+            <a href="#" class="nav-link">Prints</a>
+            <a href="#" class="nav-link">Photography</a>
+            <a href="#" class="nav-link">Artwork</a>
+            <a href="#" class="nav-link">About me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Introduction -->
+        <section class="sticker-section-1 fade-in">
+            <div class="sticker-image-container" onclick="openModal(this)">
+                <img src="images/Pages/Sticker1.png" alt="Sticker Sample 1" class="sticker-img">
+            </div>
+            <div class="sticker-text-box">
+                <h2 class="text-box-title">Want to get a piece of yourself to take home? I make free stickers for everyone</h2>
+                <p>Simply place an order via my telegram, or here on my site! Instructions below, be sure to read through everything so you know what you'll be getting!</p>
+            </div>
+            <div class="sticker-image-container" onclick="openModal(this)">
+                <img src="images/Pages/Sticker2.png" alt="Sticker Sample 2" class="sticker-img">
+            </div>
+        </section>
+
+        <!-- Section 2: Materials Info -->
+        <section class="sticker-section-2 fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title desktop-title">Claim your stickers!</h2>
+                <h2 class="text-box-title mobile-title" style="display: none;">Get your stickers!</h2>
+                <p>All free stickers are printed on my Epson L18050 printer, with basic colour calibration on a Phillips Evnia display, and are cut on my Cricut Maker 3. I currently offer 4 material types:</p>
+                <ul class="material-list">
+                    <li>Matte</li>
+                    <li>Glossy</li>
+                    <li>Holographic</li>
+                    <li>Transparent</li>
+                </ul>
+                <div class="button-row">
+                    <a href="#" class="info-btn desktop-btn">Read more on how each material looks like</a>
+                    <a href="#" class="info-btn mobile-btn" style="display: none;">Material Details</a>
+                    <a href="https://trello.com/invite/b/68fedd5dcc8ce98728969d9f/ATTIc815f0a7d1a1bcaf8e35338f6603d92c18BCAB0A/my-trello-board" target="_blank" rel="noopener noreferrer" class="capacity-btn">Current printing capacity: 2400/8000</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Order Form -->
+        <section class="sticker-section-3 fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title">Got everything? Place an order Here</h2>
+                
+                <form class="order-form" id="orderForm">
+                    <h3 class="form-title">Order from Luna</h3>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telegram">Telegram Handle:</label>
+                            <input type="text" id="telegram" name="telegram" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row mobile-single">
+                        <div class="form-group">
+                            <label for="convention">Convention:</label>
+                            <select id="convention" name="convention" required>
+                                <option value="">Select a convention</option>
+                                <option value="FURUM2025">FURUM2025</option>
+                                <option value="BAH2026">BAH2026</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="attendeeId">Attendee ID:</label>
+                            <input type="text" id="attendeeId" name="attendeeId" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="screenshot">
+                                Screenshot of Attendee Profile:
+                                <span class="info-icon desktop-info">
+                                    Why is this information collected?
+                                    <span class="info-popup">Attendee ID numbers and ID images are logged to validate identity to prevent double-ordering and ensure stickers are given to the correct person at conventions, no personally identifiable data is permanently kept.</span>
+                                </span>
+                                <button type="button" class="mobile-info-btn" id="mobileInfoBtn">Info</button>
+                            </label>
+                            <input type="file" id="screenshot" name="screenshot" accept="image/jpeg,image/jpg,image/png" required>
+                        </div>
+                    </div>
+                    
+                    <div class="submission-section">
+                        <h3 class="submission-title">Submit your sticker for printing here</h3>
+                        <p><strong>Sticker submission guideline:</strong></p>
+                        
+                        <div class="guideline-upload-container">
+                            <div class="guidelines">
+                                <ul>
+                                    <li>Images must be PNG or JPG and under 5MB</li>
+                                    <li>Images without a transparent background will be circle/square cut, or auto-transparented
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" id="acceptLowerQuality" name="acceptLowerQuality">
+                                            <label for="acceptLowerQuality" title="This has varying success rate, only check if you are willing to accept a lesser quality print/cut, are do not have an image with a transparent background">This has varying success rate, only check if you are willing to accept a lesser quality print/cut, are do not have an image with a transparent background</label>
+                                        </div>
+                                    </li>
+                                    <li>Complex shapes and sharp angles will be padded heavily, or circle cut</li>
+                                    <li>All submissions must be SFW</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="upload-preview">
+                                <div class="preview-box" id="previewBox" onclick="document.getElementById('stickerImage').click()">
+                                    <div class="preview-placeholder" id="previewPlaceholder">
+                                        Click to upload image
+                                    </div>
+                                    <img id="previewImage" style="display: none;">
+                                </div>
+                                <label for="stickerImage" class="upload-label" id="changeImageBtn" style="display: none;">
+                                    Choose a different image
+                                </label>
+                                <input type="file" id="stickerImage" name="stickerImage" accept="image/jpeg,image/jpg,image/png" style="display: none;" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Form</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section class="sticker-section-4 fade-in">
+            <div class="full-width-box">
+                <h2 class="text-box-title">FAQ</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">How many stickers do I get?</div>
+                        <div class="faq-answer">Each person is entitled 10 physical stickers on my matte material, while friends get at least 30 pieces on any of my available materials.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What size are my stickers?</div>
+                        <div class="faq-answer">All free stickers are printed at a standard 1.25x1.25 inch size. If the image is not square, it will be averaged to roughly cover that size, at my own discretion.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Where can I pick up my stickers?</div>
+                        <div class="faq-answer">Stickers can be picked up around the convention period. Details will be given in my stickers Telegram group, which I will send to you upon order acceptance, so be sure to join once you receive that message.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">Can I submit more than 1 image?</div>
+                        <div class="faq-answer">For free stickers, that is not possible. However, friends can message me to inquire about multiple designs.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What if I want more stickers?</div>
+                        <div class="faq-answer">Additional stickers are paid. Get in touch with me on Telegram for more details.</div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">What is the submission deadline?</div>
+                        <div class="faq-answer">The submission deadline is 2 weeks before any convention I attend.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luna's Print Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
+    <!-- Info Popup Modal (Mobile) -->
+    <div id="infoModal" class="modal" onclick="closeInfoModal()">
+        <span class="close-modal">&times;</span>
+        <div style="background: var(--dark-grey); padding: 2rem; border-radius: 15px; max-width: 500px; border: 2px solid var(--light-blue);">
+            <h3 style="color: var(--light-blue); margin-bottom: 1rem;">Why is this information collected?</h3>
+            <p>Attendee ID numbers and ID images are logged to validate identity to prevent double-ordering and ensure stickers are given to the correct person at conventions, no personally identifiable data is permanently kept.</p>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Responsive title switching
+        function updateTitleDisplay() {
+            const desktopTitles = document.querySelectorAll('.desktop-title');
+            const mobileTitles = document.querySelectorAll('.mobile-title');
+            const desktopBtns = document.querySelectorAll('.desktop-btn');
+            const mobileBtns = document.querySelectorAll('.mobile-btn');
+            const desktopInfo = document.querySelectorAll('.desktop-info');
+            
+            if (window.innerWidth <= 768) {
+                desktopTitles.forEach(el => el.style.display = 'none');
+                mobileTitles.forEach(el => el.style.display = 'block');
+                desktopBtns.forEach(el => el.style.display = 'none');
+                mobileBtns.forEach(el => el.style.display = 'inline-block');
+                desktopInfo.forEach(el => el.style.display = 'none');
+            } else {
+                desktopTitles.forEach(el => el.style.display = 'block');
+                mobileTitles.forEach(el => el.style.display = 'none');
+                desktopBtns.forEach(el => el.style.display = 'inline-block');
+                mobileBtns.forEach(el => el.style.display = 'none');
+                desktopInfo.forEach(el => el.style.display = 'inline');
+            }
+        }
+        
+        updateTitleDisplay();
+        window.addEventListener('resize', updateTitleDisplay);
+
+        // Mobile info button
+        const mobileInfoBtn = document.getElementById('mobileInfoBtn');
+        if (mobileInfoBtn) {
+            mobileInfoBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.getElementById('infoModal').style.display = 'flex';
+            });
+        }
+
+        function closeInfoModal() {
+            document.getElementById('infoModal').style.display = 'none';
+        }
+
+        // Fade-in on scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Image modal functionality
+        function openModal(container) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const img = container.querySelector('img');
+            
+            modal.style.display = 'flex';
+            modalImg.src = img.src;
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeInfoModal();
+            }
+        });
+
+        // Image preview functionality
+        const stickerImageInput = document.getElementById('stickerImage');
+        const previewBox = document.getElementById('previewBox');
+        const previewImage = document.getElementById('previewImage');
+        const previewPlaceholder = document.getElementById('previewPlaceholder');
+        const changeImageBtn = document.getElementById('changeImageBtn');
+
+        // Upload rate limiting
+        let uploadCount = 0;
+        let uploadTimeout;
+        let uploadBlocked = false;
+
+        function resetUploadCount() {
+            uploadCount = 0;
+            uploadBlocked = false;
+        }
+
+        stickerImageInput.addEventListener('change', function(e) {
+            if (uploadBlocked) {
+                alert('Too many uploads at once, wait 2 minutes');
+                e.target.value = '';
+                return;
+            }
+
+            uploadCount++;
+            
+            if (uploadCount >= 5) {
+                uploadBlocked = true;
+                alert('Too many uploads at once, wait 2 minutes');
+                e.target.value = '';
+                setTimeout(resetUploadCount, 120000); // 2 minutes
+                return;
+            }
+
+            // Reset count after 30 seconds
+            clearTimeout(uploadTimeout);
+            uploadTimeout = setTimeout(() => {
+                uploadCount = 0;
+            }, 30000);
+
+            const file = e.target.files[0];
+            if (file) {
+                // Validate file size (6MB max)
+                if (file.size > 6 * 1024 * 1024) {
+                    alert('File size must be under 6MB');
+                    e.target.value = '';
+                    return;
+                }
+
+                // Validate file type
+                if (!file.type.match(/^image\/(jpeg|jpg|png)$/)) {
+                    alert('Only JPEG and PNG files are allowed');
+                    e.target.value = '';
+                    return;
+                }
+
+                const reader = new FileReader();
+                reader.onload = function(event) {
+                    previewImage.src = event.target.result;
+                    previewImage.style.display = 'block';
+                    previewPlaceholder.style.display = 'none';
+                    changeImageBtn.style.display = 'inline-block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Prevent modal from closing when clicking the image
+        document.getElementById('modalImage').addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+
+        // Form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would normally send the data to your Vercel backend
+            // For now, we'll just show a success message
+            alert('Form submitted successfully! You will receive a confirmation via Telegram shortly.');
+            
+            // Reset form
+            this.reset();
+            previewImage.style.display = 'none';
+            previewPlaceholder.style.display = 'block';
+            changeImageBtn.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
