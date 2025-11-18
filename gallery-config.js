@@ -1,5 +1,5 @@
 // Auto-generated gallery configuration
-// Last updated: 2025-11-18T11:26:52.726Z
+// Last updated: 2025-11-18T12:58:00.071Z
 
 const galleryImages = [
   {
@@ -129,246 +129,8 @@ const galleryImages = [
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Fur/_D560016.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560016.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_D560039.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560039.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_D560054.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560054.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_D560270.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560270.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_D560281.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560281.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_D560287.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560287.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC0469_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC0469_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC1038_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1038_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC1056_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1056_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC1769_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1769_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC2023_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC2023_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC3541_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC3541_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC6048_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC6048_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC6605_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC6605_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7293_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7293_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7346_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7346_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7476_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7476_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7501_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7501_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7546_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7546_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC7586_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7586_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC9633_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9633_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC9711_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9711_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_DSC9774_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9774_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_LNA1054_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_LNA1054_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Fur/_LNA1081_DxO.jpg",
-    "thumbnail": "images/Gallery/Fur/Thumbnails/_LNA1081_DxO.jpg",
-    "category": "furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0027.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0027.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0028.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0028.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0045.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0045.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0053.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0053.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0063.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0063.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0064.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0064.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCF0253-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0253-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/DSCN0514.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/DSCN0514.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
     "path": "images/Gallery/Other/DSCN7934.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/DSCN7934.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/IMG_20200830_111541.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/IMG_20200830_111541.jpg",
     "category": "non-furry",
     "date": "2025-11-18",
     "aspect": "4x3"
@@ -549,479 +311,717 @@ const galleryImages = [
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/P1230555_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/P1230555_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_LNA1054_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_LNA1054_DxO.jpg",
+    "category": "furry",
+    "date": "2025-11-15",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_1210238_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1210238_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_LNA1081_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_LNA1081_DxO.jpg",
+    "category": "furry",
+    "date": "2025-11-15",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_1210716_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1210716_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_1220221_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1220221_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_1220337_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1220337_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_1220667_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1220667_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_1230739_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1230739_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_1230744_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_1230744_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_8504057.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_8504057.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_8507579.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_8507579.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_8507626.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_8507626.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_8507639.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_8507639.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_8507780.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_8507780.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_D560219.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_D560219.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC0545_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC0545_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC0631_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC0631_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC1232_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC1232_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC3685_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC3685_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4122_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4122_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4124_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4124_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4300_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4300_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4595_DxO-1.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4595_DxO-1.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4647_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4647_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC4704_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4704_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC5017_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC5017_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC5628_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC5628_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7092_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7092_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7133_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7133_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7164_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7164_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7193_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7193_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7249_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7249_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7251_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7251_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC7972_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7972_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC8084_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8084_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC8090_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8090_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_DSC8533_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8533_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC0469_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC0469_DxO.jpg",
+    "category": "furry",
+    "date": "2025-11-08",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_DSC8668_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8668_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-11-02",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_DSC8677_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8677_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-11-02",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSC9296_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC9296_DxO.jpg",
+    "path": "images/Gallery/Other/_DSC8533_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8533_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-11-01",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSC9447_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC9447_DxO.jpg",
+    "path": "images/Gallery/Other/_DSC7972_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7972_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-14",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF0060-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF0060-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC8084_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8084_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-14",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF3188-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF3188-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC8090_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC8090_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-14",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF4079-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF4079-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7293_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7293_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF4441-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF4441-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7346_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7346_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF5373-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF5373-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7476_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7476_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF5796-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF5796-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7501_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7501_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF7045-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF7045-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7546_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7546_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF7077-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF7077-RAF_DxO_DeepPRIMEXD.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC7586_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC7586_DxO.jpg",
+    "category": "furry",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF8993-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF8993-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC7133_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7133_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF9296-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9296-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC7164_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7164_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF9773-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9773-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC7193_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7193_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF9784-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9784-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC7249_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7249_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_DSF9814-RAF_DxO_DeepPRIMEXD.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9814-RAF_DxO_DeepPRIMEXD.jpg",
+    "path": "images/Gallery/Other/_DSC7251_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7251_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-10-11",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_IMG9722_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_IMG9722_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC6605_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC6605_DxO.jpg",
+    "category": "furry",
+    "date": "2025-09-20",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_IMG9738_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_IMG9738_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "path": "images/Gallery/Fur/_DSC6048_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC6048_DxO.jpg",
+    "category": "furry",
+    "date": "2025-09-16",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_LNA0842_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0842_DxO.jpg",
+    "path": "images/Gallery/Other/_1230739_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1230739_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-09-07",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_LNA0885_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0885_DxO.jpg",
+    "path": "images/Gallery/Other/_1230744_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1230744_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-09-07",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_LNA0985_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0985_DxO.jpg",
+    "path": "images/Gallery/Other/_DSC4122_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4122_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-08-31",
     "aspect": "4x3"
   },
   {
-    "path": "images/Gallery/Other/_LNA1947_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA1947_DxO.jpg",
+    "path": "images/Gallery/Other/P1230555_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/P1230555_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_LNA2478_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2478_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_LNA2541_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2541_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_LNA2639_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2639_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
-    "aspect": "4x3"
-  },
-  {
-    "path": "images/Gallery/Other/_LNA2767_DxO.jpg",
-    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2767_DxO.jpg",
-    "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-08-17",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_LNA6650_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_LNA6650_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-07-13",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_LNA6841_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_LNA6841_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-07-13",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_LNA7304_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_LNA7304_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-07-13",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC5017_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC5017_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-07-05",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_LNS5859_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_LNS5859_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-07-01",
     "aspect": "4x3"
   },
   {
     "path": "images/Gallery/Other/_LNS6023_DxO.jpg",
     "thumbnail": "images/Gallery/Other/Thumbnails/_LNS6023_DxO.jpg",
     "category": "non-furry",
-    "date": "2025-11-18",
+    "date": "2025-07-01",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC4647_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4647_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-27",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC4704_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4704_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-27",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC4124_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4124_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC4300_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4300_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_1210716_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1210716_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-25",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_1220221_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1220221_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-25",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_1220337_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1220337_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-25",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_1220667_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1220667_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-25",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC5628_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC5628_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-24",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC3685_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC3685_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-22",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_1210238_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_1210238_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-06-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC3541_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC3541_DxO.jpg",
+    "category": "furry",
+    "date": "2025-06-07",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC1769_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1769_DxO.jpg",
+    "category": "furry",
+    "date": "2025-05-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC2023_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC2023_DxO.jpg",
+    "category": "furry",
+    "date": "2025-05-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC1038_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1038_DxO.jpg",
+    "category": "furry",
+    "date": "2025-05-09",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC1056_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC1056_DxO.jpg",
+    "category": "furry",
+    "date": "2025-05-09",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC1232_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC1232_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-05-09",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC0545_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC0545_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-05-06",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC0631_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC0631_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-05-06",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC9633_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9633_DxO.jpg",
+    "category": "furry",
+    "date": "2025-04-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC9711_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9711_DxO.jpg",
+    "category": "furry",
+    "date": "2025-04-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_DSC9774_DxO.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_DSC9774_DxO.jpg",
+    "category": "furry",
+    "date": "2025-04-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC9447_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC9447_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-04-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC9296_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC9296_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-04-15",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC7092_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC7092_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-04-02",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA2478_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2478_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-23",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA2541_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2541_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-23",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA2639_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2639_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-23",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA2767_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA2767_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-23",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSC4595_DxO-1.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSC4595_DxO-1.jpg",
+    "category": "non-furry",
+    "date": "2025-02-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA0842_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0842_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA0885_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0885_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA0985_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA0985_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_LNA1947_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_LNA1947_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-02-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_IMG9738_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_IMG9738_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-01-26",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_IMG9722_DxO.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_IMG9722_DxO.jpg",
+    "category": "non-furry",
+    "date": "2025-01-25",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560270.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560270.jpg",
+    "category": "furry",
+    "date": "2024-07-07",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560281.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560281.jpg",
+    "category": "furry",
+    "date": "2024-07-07",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560287.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560287.jpg",
+    "category": "furry",
+    "date": "2024-07-07",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560016.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560016.jpg",
+    "category": "furry",
+    "date": "2024-07-05",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560039.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560039.jpg",
+    "category": "furry",
+    "date": "2024-07-05",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Fur/_D560054.jpg",
+    "thumbnail": "images/Gallery/Fur/Thumbnails/_D560054.jpg",
+    "category": "furry",
+    "date": "2024-07-05",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF0060-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF0060-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF9296-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9296-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF9773-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9773-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF9784-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9784-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF9814-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF9814-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-10",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF8993-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF8993-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-08",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF7045-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF7045-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-05",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF7077-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF7077-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-08-05",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF5373-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF5373-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-07-22",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF5796-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF5796-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-07-22",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF4079-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF4079-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-07-09",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF4441-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF4441-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-07-09",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_DSF3188-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_DSF3188-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-06-11",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0253-RAF_DxO_DeepPRIMEXD.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0253-RAF_DxO_DeepPRIMEXD.jpg",
+    "category": "non-furry",
+    "date": "2023-05-23",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0027.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0027.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0028.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0028.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0045.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0045.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0053.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0053.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0063.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0063.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCF0064.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCF0064.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_8507579.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_8507579.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_8507626.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_8507626.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_8507639.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_8507639.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_8507780.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_8507780.jpg",
+    "category": "non-furry",
+    "date": "2022-12-17",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_8504057.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_8504057.jpg",
+    "category": "non-furry",
+    "date": "2022-05-01",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/_D560219.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/_D560219.jpg",
+    "category": "non-furry",
+    "date": "2021-05-16",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/IMG_20200830_111541.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/IMG_20200830_111541.jpg",
+    "category": "non-furry",
+    "date": "2020-08-30",
+    "aspect": "4x3"
+  },
+  {
+    "path": "images/Gallery/Other/DSCN0514.jpg",
+    "thumbnail": "images/Gallery/Other/Thumbnails/DSCN0514.jpg",
+    "category": "non-furry",
+    "date": "1899-11-30",
     "aspect": "4x3"
   }
 ];

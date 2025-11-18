@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const exifParser = require('exif-parser');
 
 // Paths
 const furPath = path.join(__dirname, 'images', 'Gallery', 'Fur');
@@ -35,8 +36,24 @@ function getImageDimensions(imagePath) {
     }
 }
 
-// Function to extract date from filename or use file modification date
+// Function to extract date from EXIF metadata or fallback to file modification date
 function extractDate(filename, filePath) {
+    try {
+        const buffer = fs.readFileSync(filePath);
+        const parser = exifParser.create(buffer);
+        const result = parser.parse();
+        
+        // Try to get DateTimeOriginal (when photo was taken)
+        if (result.tags && result.tags.DateTimeOriginal) {
+            const date = new Date(result.tags.DateTimeOriginal * 1000);
+            return date.toISOString().split('T')[0];
+        }
+    } catch (error) {
+        // If EXIF parsing fails, fall back to file modification date
+        console.warn(`Could not read EXIF for ${filename}, using file date`);
+    }
+    
+    // Fallback to file modification date
     const stat = fs.statSync(filePath);
     return stat.mtime.toISOString().split('T')[0];
 }
