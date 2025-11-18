@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna's Print Page - Sticker Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <video class="title-video" autoplay loop muted playsinline>
+            <source src="images/Title.mp4" type="video/mp4">
+        </video>
+        <div class="title-overlay">
+            <h1 class="title-text">Sticker Details Page</h1>
+        </div>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="stickers.html" class="nav-link active">Stickers</a>
+        <a href="#" class="nav-link">Prints</a>
+        <a href="#" class="nav-link">Photography</a>
+        <a href="#" class="nav-link">Artwork</a>
+        <a href="#" class="nav-link">About me</a>
+    </div>
+
+    <!-- Navigation Bar (Desktop) -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="stickers.html" class="nav-link active">Stickers</a>
+            <a href="#" class="nav-link">Prints</a>
+            <a href="#" class="nav-link">Photography</a>
+            <a href="#" class="nav-link">Artwork</a>
+            <a href="#" class="nav-link">About me</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Section 1: Material Comparison and Details -->
+        <section class="details-section-1 fade-in">
+            <!-- Left: Material Comparison -->
+            <div class="comparison-box">
+                <h2 class="text-box-title">Material Comparison</h2>
+                
+                <div class="image-viewer">
+                    <div class="viewer-controls">
+                        <select id="materialSelect" class="material-select">
+                            <option value="Matte">Matte</option>
+                            <option value="Glossy">Glossy</option>
+                            <option value="Holographic">Holographic</option>
+                            <option value="Transparent">Transparent</option>
+                        </select>
+                        <button id="resetBtn" class="reset-btn">Reset View</button>
+                    </div>
+                    
+                    <div class="image-container">
+                        <img id="materialImage" src="images/Materials/Matte.jpg" alt="Material Sample">
+                    </div>
+                    
+                    <div class="slider-controls">
+                        <div class="slider-group">
+                            <label for="brightnessSlider">Brightness</label>
+                            <input type="range" id="brightnessSlider" min="-50" max="50" value="0" class="slider">
+                        </div>
+                        <div class="slider-group">
+                            <label for="saturationSlider">Saturation</label>
+                            <input type="range" id="saturationSlider" min="-50" max="50" value="0" class="slider">
+                        </div>
+                    </div>
+                    
+                    <div class="viewer-footer">
+                        <div class="tooltip-wrapper">
+                            <span class="footer-link">disclaimer</span>
+                            <div class="footer-tooltip">
+                                <p>Due to lighting setup inconsistency, any non-matte materials will have a colour shift on either side of the image. This is due to glare caused by the setup, and will be addressed in a future iteration of the system.</p>
+                            </div>
+                        </div>
+                        <div class="tooltip-wrapper methodology-wrapper">
+                            <span class="footer-link">Methodology</span>
+                            <div class="footer-tooltip methodology-tooltip">
+                                <img src="images/Pages/Sticker3.jpg" alt="Setup Image" class="setup-image">
+                                <p>There are comparisons of each material type, under normalized conditions. The images are use ARGB colour space and are preset to match the Nikon Z8-Neutral profile, and are lit using 2 300W 95CRI LED studio lights with 60x90 softboxes, set to a temperature of 5600K. White balance is done in DXO PhotoLab 8, setting each image to 5600K with a tint value of -6.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right: Material Details Table -->
+            <div class="details-box">
+                <h2 class="text-box-title">Material details</h2>
+                
+                <div class="material-table-wrapper">
+                    <table class="material-table">
+                        <thead>
+                            <tr>
+                                <th>Material Type</th>
+                                <th>Colours</th>
+                                <th>Gamut</th>
+                                <th>Details</th>
+                                <th>Durability</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Matte</strong></td>
+                                <td class="rating-yellow">Duller</td>
+                                <td class="rating-red">Less</td>
+                                <td class="rating-green">Good</td>
+                                <td class="rating-dark-green">Best</td>
+                                <td>The default material choice.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Glossy</strong></td>
+                                <td class="rating-dark-green">Very Vibrant</td>
+                                <td class="rating-dark-green">Most</td>
+                                <td class="rating-dark-green">Best</td>
+                                <td class="rating-green">Good</td>
+                                <td>Solid choice to get more vibrancy for stronger colours.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Holographic</strong></td>
+                                <td class="rating-green">Vibrant</td>
+                                <td class="rating-green">Good</td>
+                                <td class="rating-yellow">Average</td>
+                                <td class="rating-red">Poor</td>
+                                <td>Has a rainbow shine under lighting.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transparent</strong></td>
+                                <td class="rating-green">Vibrant (On white)</td>
+                                <td class="rating-green">Good (On white)</td>
+                                <td class="rating-green">Good (On white)</td>
+                                <td class="rating-green">Good</td>
+                                <td>Translucent stickers which look great on white, and offers see-through effects on surfaces like glass and acrylic.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Luna's Print Page. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('active');
+            mobileOverlay.classList.toggle('active');
+        }
+        
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileOverlay.addEventListener('click', toggleMobileMenu);
+
+        // Fade-in on scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Material viewer functionality
+        const materialSelect = document.getElementById('materialSelect');
+        const materialImage = document.getElementById('materialImage');
+        const brightnessSlider = document.getElementById('brightnessSlider');
+        const saturationSlider = document.getElementById('saturationSlider');
+        const resetBtn = document.getElementById('resetBtn');
+
+        function updateImageFilters() {
+            const brightness = parseInt(brightnessSlider.value);
+            const saturation = parseInt(saturationSlider.value);
+            
+            const brightnessPercent = 100 + brightness;
+            const saturationPercent = 100 + saturation;
+            
+            materialImage.style.filter = `brightness(${brightnessPercent}%) saturate(${saturationPercent}%)`;
+        }
+
+        materialSelect.addEventListener('change', function() {
+            const material = this.value;
+            materialImage.src = `images/Materials/${material}.jpg`;
+        });
+
+        brightnessSlider.addEventListener('input', updateImageFilters);
+        saturationSlider.addEventListener('input', updateImageFilters);
+
+        resetBtn.addEventListener('click', function() {
+            materialSelect.value = 'Matte';
+            materialImage.src = 'images/Materials/Matte.jpg';
+            brightnessSlider.value = 0;
+            saturationSlider.value = 0;
+            updateImageFilters();
+        });
+    </script>
+</body>
+</html>

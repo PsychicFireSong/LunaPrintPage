@@ -737,6 +737,11 @@ footer {
 
 .checkbox-item input[type="checkbox"] {
     margin-top: 0.3rem;
+    cursor: pointer;
+}
+
+.checkbox-label {
+    cursor: pointer;
 }
 
 .upload-preview {
@@ -842,6 +847,264 @@ footer {
 .faq-answer {
     line-height: 1.6;
     color: var(--white);
+}
+
+/* Sticker Details Page Styles */
+.details-section-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.comparison-box,
+.details-box {
+    background: linear-gradient(135deg, var(--dark-grey), var(--dark-blue));
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 2px solid var(--light-blue);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.image-viewer {
+    margin-top: 1.5rem;
+}
+
+.viewer-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    gap: 1rem;
+}
+
+.material-select {
+    flex: 1;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 2px solid var(--light-blue);
+    background: var(--dark-grey);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.material-select:focus {
+    outline: none;
+    border-color: var(--bright-orange);
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.4);
+}
+
+.reset-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background: linear-gradient(135deg, var(--regal-purple), var(--bright-orange));
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 111, 0, 0.4);
+}
+
+.reset-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 111, 0, 0.6);
+}
+
+.image-container {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--light-blue);
+    margin-bottom: 1.5rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+.slider-controls {
+    margin-bottom: 1.5rem;
+}
+
+.slider-group {
+    margin-bottom: 1rem;
+}
+
+.slider-group label {
+    display: block;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--light-blue);
+    margin-bottom: 0.5rem;
+}
+
+.slider {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--dark-grey), var(--light-blue), var(--dark-grey));
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bright-orange);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background: var(--light-blue);
+    transform: scale(1.2);
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--bright-orange);
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.slider::-moz-range-thumb:hover {
+    background: var(--light-blue);
+    transform: scale(1.2);
+}
+
+.viewer-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--light-blue);
+}
+
+.tooltip-wrapper {
+    position: relative;
+    cursor: help;
+}
+
+.footer-link {
+    font-size: 0.9rem;
+    color: var(--light-blue);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.footer-tooltip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: var(--dark-grey);
+    border: 2px solid var(--light-blue);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 300px;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.5rem;
+}
+
+.methodology-wrapper {
+    margin-left: auto;
+}
+
+.methodology-tooltip {
+    left: auto;
+    right: 0;
+    width: 350px;
+}
+
+.tooltip-wrapper:hover .footer-tooltip {
+    display: block;
+}
+
+.setup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 0.8rem;
+    border: 1px solid var(--light-blue);
+}
+
+/* Material Details Table */
+.material-table-wrapper {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+.material-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+.material-table th,
+.material-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 2px solid var(--light-blue);
+}
+
+.material-table th {
+    background: linear-gradient(135deg, var(--regal-purple), var(--dark-blue));
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.material-table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.material-table tbody tr:hover {
+    background: rgba(79, 195, 247, 0.1);
+}
+
+/* Rating Color Codes */
+.rating-dark-green {
+    background: rgba(0, 128, 0, 0.3);
+    color: #90ee90;
+    font-weight: 600;
+}
+
+.rating-green {
+    background: rgba(50, 205, 50, 0.3);
+    color: #98fb98;
+    font-weight: 600;
+}
+
+.rating-yellow {
+    background: rgba(255, 215, 0, 0.3);
+    color: #ffeb3b;
+    font-weight: 600;
+}
+
+.rating-red {
+    background: rgba(255, 69, 0, 0.3);
+    color: #ff6b6b;
+    font-weight: 600;
 }
 
 /* Mobile Responsive */
@@ -995,6 +1258,34 @@ footer {
 
     .submission-section {
         padding-top: 1.5rem;
+    }
+
+    /* Sticker Details Page Mobile */
+    .details-section-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-tooltip,
+    .methodology-tooltip {
+        width: 250px;
+    }
+
+    .material-table {
+        font-size: 0.8rem;
+    }
+
+    .material-table th,
+    .material-table td {
+        padding: 0.6rem;
+    }
+
+    .viewer-footer {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .methodology-wrapper {
+        margin-left: 0;
     }
 }
 
